@@ -21,7 +21,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-pa
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/openwrt-passwall-packages
 
 # 添加 主题
-# git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
+rm -rf feeds/luci/themes/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
 
 # -------------------------------
 # 系统定制部分
